@@ -11,7 +11,7 @@ public class NameGenerator {
         WordChecker wordChecker = new WordChecker();
         StringSimilarity stringSimilarity = new StringSimilarity();
         Dictionary dictionary = new Dictionary();
-        final String filepath = "https://raw.githubusercontent.com/Ivan3ol/quarkusNameGen/master/american-english";
+        final String filepath = "https://raw.githubusercontent.com/Ivan3ol/quarkusNameGen/master/src/main/resources/META-INF/resources/american-english";
 
         dictionary.build(filepath);
         List<String> syllabes = combination(CHARACTERS, 3).parallelStream()
